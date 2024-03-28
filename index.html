@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/normilize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1><span style="color: #FF0080;">P</span><span style="color: #FCF814;">I</span><span style="color: #00FF64;">X</span><span style="color: #00FCFF;">EL</span><span style="color: #FCEF1E;">A</span><span style="color: #FF0080;">R</span><span style="color: #FCEF1E;">T</span></h1>
+    </header>
+
+    <main id="main">
+        <div class="palette">
+            <div class="colors">
+                <input type="color" value="#FF0080" class="colorInput">
+                <input type="color" value="#FCF814" class="colorInput">
+                <input type="color" value="#00FF64" class="colorInput">
+                <input type="color" value="#5EFDFF" class="colorInput">
+                <input type="color" value="#992DB3" class="colorInput">
+                <input type="color" value="#0EA6FF" class="colorInput">
+                <input type="color" value="#FF752A" class="colorInput">
+                <input type="color" value="#66FF9A" class="colorInput">
+                <input type="color" value="#FF6565" class="colorInput">
+                <input type="color" value="#A0AAFF" class="colorInput">
+                <input type="color" value="#FF71E0" class="colorInput">
+                <input type="color" value="#FFFFFF" class="colorInput">
+            </div>
+
+            <div class="erasers">
+                <img src="img/erase1.svg" id="er1" alt="">
+                <img src="img/erase2.svg" id="er2" alt="">
+            </div>
+        </div>
+
+        <div class="canvas">
+            <img id="back" src="img/background.svg" alt="">
+            <table id="canvas"></table>
+        </div>
+
+        <div class="canvasSize">
+            <img src="img/canvas.svg" alt="">
+            <div class="canvasInp">
+                <label for="widthInput">Ширина:</label>
+                <input type="number" id="widthInput" min="1" max="128">
+
+                <label for="heightInput">Высота:</label>
+                <input type="number" id="heightInput" min="1" max="128">
+            </div>
+            <button id="createCanvas">Создать холст</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
